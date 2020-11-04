@@ -1,0 +1,293 @@
+@charset "ISO-8859-1";
+
+body {
+	background-color: #000000;
+	margin: 0;
+	padding: 20px;
+	font-family: "Ride", Muli, Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	line-height: 1.3;
+}
+
+.headernav {
+	overflow: hidden;
+	background-color: #000;
+}
+
+.headernav a {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+.headernav a:hover {
+	background-color: #FFD100;
+	color: #000;
+}
+
+.header-right {
+	float: right;
+}
+
+.topnav {
+	overflow: hidden;
+	background-color: #000;
+}
+
+.topnav a {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+.topnav a:hover {
+	background-color: #FFD100;
+	color: black;
+}
+
+div {
+	display: block;
+}
+
+img {
+	border: 0;
+	-ms-interpolation-mode: bicubic;
+	vertical-align: middle;
+}
+
+ul {
+	display: block;
+	list-style-type: disc;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	padding-inline-start: 40px;
+}
+
+li {
+	display: list-item;
+	text-align: -webkit-match-parent;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.typeText, select, textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: vertical;
+}
+
+label {
+	padding: 12px 12px 12px 0;
+	display: inline-block;
+}
+
+.indexForm, .mainDiv {
+	background-color: #FFFFFF;
+}
+
+.submitForm {
+	background-color: #FFD100;
+	color: #000;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	float: right;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+input[type=submit]:hover {
+	background-color: #000;
+	color: #FFD100;
+	border: 1px solid #FFD100;
+}
+
+.container {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+}
+
+.col-25 {
+	margin-left: 15px;
+	float: left;
+	width: 20%;
+	margin-top: 6px;
+}
+
+.col-75 {
+	float: left;
+	width: 75%;
+	margin-top: 6px;
+}
+
+.mainDiv {
+	max-width: 1000px;
+	margin: auto;
+	background-color: #f1f1f1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.rows {
+	margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.rows, .rows>.column {
+	padding: 8px;
+}
+
+.rows:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.column {
+	float: left;
+	width: 33.33%;
+	overflow: auto;
+}
+
+.content {
+	background-color: white;
+	padding: 10px;
+}
+
+@media screen and (max-width: 900px) {
+	.column {
+		width: 50%;
+	}
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+	.column {
+		width: 100%;
+	}
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+	.col-25, .col-75, input[type=submit] {
+		width: 100%;
+		margin-top: 0;
+	}
+}
+
+.infoDiv, .nyhetsBrev {
+	background-color: #000;
+	color: #FFD100;
+	overflow: hidden;
+	display: block;
+}
+
+.overskrift {
+	margin-left: 15px;
+	float: left;
+	width: 20%;
+	margin-top: 6px;
+}
+
+.infoTekst {
+	float: left;
+	width: 75%;
+	margin-top: 6px;
+	color: #f2f2f2;
+	background-color: #242323;
+}
+
+.nyhetsBrevBox {
+	color: #f2f2f2;
+	background-color: #242323;
+	margin-left: 15px;
+	float: left;
+	width: 20%;
+	margin-top: 6px;
+}
+
+.nyhetsButton {
+	float: left;
+	width: 20%;
+	margin-top: 6px;
+	background-color: #FFD100;
+	color: #000;
+	border: none;
+	border-radius: 4px;
+}
+
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #000;
+	color: white;
+	text-align: center;
+}
+
+.notImplemented {
+	text-align: center;
+	width: 100%;
+	color: #FFD100;
+}
+
+fieldset {
+	border: 1px solid #FFD100;
+}
+
+.btn {
+	margin-left: 5px;
+	border: none;
+	outline: none;
+	padding: 8px 8px;
+	background-color: #f2f2f2;
+	cursor: pointer;
+	border: 1px solid #000;
+}
+
+.btn:hover {
+	background-color: #FFD100;
+}
+
+.btn.active {
+	background-color: #FFD100;
+	color: #000;
+}
+
+.myBtnContainer {
+	background-color: white;
+}
+
+.bilLink:link, .bilLink:visited  {
+  background-color: #FFD100;
+  color: #000;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.bilLink:hover, bilLink:active {
+  background-color: #000;
+  color: #FFD100;
+}

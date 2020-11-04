@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Bestill leiebil hos Hertz Bilutleie</title>
+<link rel="stylesheet" href="Style/HertzStyle.css">
+</head>
+<body>
+	<div class="headernav">
+		<a href="index.html" class="logo"><img
+			src="https://images.hertz.com/rac/misc/refresh09/logo_hertz_app.png"
+			alt="HertzLogo"> </a>
+		<div class="header-right">
+			<a href="./notImplemented.html">NO/NO</a> <a
+				href="./notImplemented.html">Logg inn/Meld deg inn nå</a>
+		</div>
+	</div>
+
+	<div class="topnav">
+		<a href="./carHire.html">LEIEBIL</a> <a href="./notImplemented.html">VAREBIL</a>
+		<a href="./notImplemented.html">STEDER</a> <a
+			href="./notImplemented.html">SPESIALTILBUD</a> <a
+			href="./notImplemented.html">BEDRIFTSAVTALE</a> <a
+			href="./notImplemented.html">PRODUKTER</a> <a
+			href="./notImplemented.html">HJELP</a> <a
+			href="./notImplemented.html">GOLD PLUS REWARDS</a>
+	</div>
+
+	---------------------------------------
+	<div class="indexForm">
+		<form method="POST" action="./rentalEnd.html">
+			<div class="row">
+				<div class="col-25">
+					<label for="henteplass">
+						<h4>Sted eller flyplasskode</h4>
+					</label>
+				</div>
+				<div class="col-75">
+					<input class="typeText" type="text" id="henteplass"
+						name="henteplass" placeholder="by, land eller flyplasskode">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-25">
+					<label for="leveringLok">Leverings lokasjon</label>
+				</div>
+				<div class="col-75">
+					<input class="typeText" type="text" id="leveringLok"
+						name="leveringLok">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-25">
+					<label for="hentes">Hentes</label>
+				</div>
+				<div class="col-75">
+					<input type="datetime-local" id="hentes" name="hentes">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-25">
+					<label for="levere">Leveres</label>
+				</div>
+				<div class="col-75">
+					<input type="datetime-local" id="levere" name="levere">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-25">
+					<label for="biltype">Biltype</label>
+				</div>
+				<div class="col-75">
+					<select id="biltype" name="biltype">
+						<option value="0">Velg biltype:</option>
+						<option value="A">Bilklasse A</option>
+						<option value="B">Bilklasse B</option>
+						<option value="C">Bilklasse C</option>
+						<option value="D">Bilklasse D</option>
+						<option value="V">Bilklasse V</option>
+					</select>
+				</div>
+			</div>
+			
+			<br></br>
+			<div class="row">
+				<input class="submitForm" type="submit" value="Bestill">
+			</div>
+		</form>
+		
+		<a class = "bilLink" href="./carHire.html" target="_blank">Mer info om biltyper finner du her!</a>
+	</div>
+
+	<br></br>
+	<div class="infoDiv">
+		<fieldset>
+			<h3 class="overskrift">Bilutleie</h3>
+			<p class="infoTekst">
+				Trenger du en leiebil? Med over 100 års erfaring fra bilutleie kan
+				man trygt si at du har <br></br> kommet til rett sted. Hos oss kan
+				du leie bil på over 10 000 steder i over 145 land. I Norge <br></br>
+				har vi godt over hundre utleiekontor, og innehar landets største
+				leiebilflåte. Velg blant et <br></br> bredt utvalg biler fra de
+				største merkene inkludert varebiler og elbiler. Takk for at du
+				velger <br></br> Hertz.
+			</p>
+
+		</fieldset>
+	</div>
+
+	<div class="nyhetsBrev">
+		<form method="POST" action="./">
+			<fieldset>
+				<p>
+					<input class="nyhetsBrevBox" type="text" id="nyhetsBrevBox"
+						name="nyhetsBrevBox" placeholder="Meld deg på vårt nyhetsbrev">
+				</p>
+
+				<input class="nyhetsButton" type="submit" value="Meld inn">
+			</fieldset>
+		</form>
+	</div>
+	<br></br>
+
+	<div class="footer">
+		<p>© 2020 The Hertz Corporation</p>
+	</div>
+	<br></br>
+
+</body>
+</html>
